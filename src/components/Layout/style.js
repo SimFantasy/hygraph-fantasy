@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import s from '@/styles/global.style'
 import themeImage from '@/assets/theme.png'
 
-export const FrontLayoutWrap = styled.section`
+export const LayoutWrap = styled.section`
   width: 100vw;
   .layout-main {
     min-height: calc(100vh - var(--sim-header-height) - var(--sim-footer-height));

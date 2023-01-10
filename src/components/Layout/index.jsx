@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
-import FrontLayout from './FrontLayout'
-import ManageLayout from './ManageLayout'
+import React from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import { LayoutWrap } from './style'
 
 const Layout = ({ children }) => {
-  const { pathname } = useLocation()
-  const isMangePage = pathname.includes('/manage')
-  return isMangePage ? (
-    <ManageLayout>{children}</ManageLayout>
-  ) : (
-    <FrontLayout>{children}</FrontLayout>
+  return (
+    <LayoutWrap>
+      <Header />
+      <main className='layout-main'>{children}</main>
+      <Footer />
+    </LayoutWrap>
   )
 }
 

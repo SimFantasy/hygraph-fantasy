@@ -263,14 +263,6 @@ const RootStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
   }
-
-  .page-card {
-    box-sizing: border-box;
-    /* padding: var(--sim-space-sm); */
-    border-radius: var(--sim-radius-sm);
-    background-color: var(--sim-bg);
-    box-sizing: var(--sim-shadow);
-  }
 `
 
 export default RootStyle

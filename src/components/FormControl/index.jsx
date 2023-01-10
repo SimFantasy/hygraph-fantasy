@@ -5,8 +5,6 @@ import Textarea from './Textarea'
 import Checkbox from './Checkbox'
 import Select from './Select'
 import Radio from './Radio'
-import ArrayInput from './ArrayInput'
-import Editor from './Editor'
 import Button from './Button'
 
 const FormControl = ({ control, ...rest }) => {
@@ -21,10 +19,6 @@ const FormControl = ({ control, ...rest }) => {
       return <Radio {...rest} />
     case 'checkbox':
       return <Checkbox {...rest} />
-    case 'arrayInput':
-      return <ArrayInput {...rest} />
-    case 'editor':
-      return <Editor {...rest} />
     case 'button':
       return <Button {...rest} />
     default:
