@@ -65,6 +65,7 @@ export default {
   'mobile-width': '576px',
   'table-width': '992px',
   'page-width': ['768px', '86vw', '90vw'],
+  'manage-page-width': ['100%', '100%', '100%'],
 
   // function
   flex,
